@@ -1,0 +1,40 @@
+# Ignore Python virtual environment directory
+venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment variables file (e.g., .env)
+.env
+
+# Ignore IDE and editor files (for example, VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore pytest cache
+.cache
+
+# Ignore Python distribution files
+*.egg
+*.egg-info
+dist/
+build/
+
+# Ignore virtual environment tools
+pip-wheel-metadata/
+
+# Ignore coverage reports
+coverage.xml
+*.cover
+*.hypothesis/
+nosetests.xml
+test-*.xml

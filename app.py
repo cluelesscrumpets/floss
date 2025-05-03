@@ -5,11 +5,12 @@ app = Flask(__name__)
 
 @app.before_request
 def redirect_to_www():
-    # Check if the current host starts with 'www.'
+    # Skip redirect for local development
+    if request.host.startswith("127.0.0.1") or request.host.startswith("localhost"):
+        return
     if not request.host.startswith("www."):
-        # Build the new URL with 'www.'
         new_url = request.url.replace(f"//{request.host}", f"//www.{request.host}")
-        return redirect(new_url, code=301)  # Permanent redirect
+        return redirect(new_url, code=301)
 
 @app.route('/')
 def index():
@@ -30,5 +31,3 @@ def page_not_found(e):
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
