@@ -1,4 +1,6 @@
 from flask import Flask, redirect, render_template, request, url_for
+from csscompressor import compress
+import os
 
 # https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
 app = Flask(__name__)
@@ -11,6 +13,17 @@ def redirect_to_www():
     if not request.host.startswith("www."):
         new_url = request.url.replace(f"//{request.host}", f"//www.{request.host}")
         return redirect(new_url, code=301)
+
+def minify_css(input_path, output_path):
+    if not os.path.exists(input_path):
+        print(f"[!] CSS input file not found: {input_path}")
+        return
+    with open(input_path, 'r') as f:
+        css = f.read()
+    minified = compress(css)
+    with open(output_path, 'w') as f:
+        f.write(minified)
+    print(f"[✓] Minified CSS saved to {output_path}")
 
 @app.route('/')
 def index():
@@ -30,4 +43,5 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
+    minify_css('static/style.css', 'static/style.min.css')
     app.run(debug=True)
