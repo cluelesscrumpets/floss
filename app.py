@@ -1,6 +1,11 @@
 from flask import Flask, redirect, render_template, request, url_for
 from csscompressor import compress
 import os
+import sys
+import logging
+
+logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
+logging.debug("This is a debug message")
 
 # https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
 app = Flask(__name__)
