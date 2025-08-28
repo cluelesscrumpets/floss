@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error - Floss Dental Clinic</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/style-new.css" />
+  <link rel="stylesheet" href="/static/components/header.css">
+  <link rel="stylesheet" href="/static/components/footer.css">
+
+  <style>
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-align: center;
+      color: white;
+    }
+    p {
+      margin-bottom: 50px;
+      text-align: center;
+      color: white;
+    }
+    
+  </style>
+</head>
+<body>
+  {% include "/components/header.html" %}
+
+  <main>
+    <div style="margin-top: 100px; min-height: 50vh; padding: 100px; text-align: center;">
+      <h1>Oops!</h1>
+      <p>Something went wrong. The page you’re looking for isn’t available.</p>
+      <a class="btn" style="font-size: 14px; padding: 15px 30px; background: white;" href="https://flossdentalclinic.online">Go Back Home</a>
+    </div>
+  </main>
+
+  {% include "/components/footer.html" %}
+
+</body>
+</html>
+
+

@@ -1,0 +1,113 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Best Dentist in Pranburi Huahin | Floss Dental Clinic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Established in 2023, Floss Dental is one of Pranburi and Huahin's premiere specialist practices renowned for providing excellence in dental care." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Floss Dental Clinic | คลินิกทันตกรรมฟลอสส์" />
+    <meta property="og:description" content="Established in 2023, Floss Dental is one of Pranburi and Huahin's premiere specialist practices renowned for providing excellence in dental care." />
+    <meta property="og:url" content="https://flossdentalclinic.online/">
+    <meta property="article:modified_time" content="2025-08-26T10:36:45+00:00" />
+
+    <link rel="icon" type="image/x-icon" href="/static/images/build/favicon.ico">
+    <link rel="canonical" href="https://flossdentalclinic.online/" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Dentist",
+            "name": "Floss Dental Clinic",
+            "image": "https://flossdentalclinic.online/static/images/floss-logo.webp",
+            "@id": "",
+            "url": "https://flossdentalclinic.online/",
+            "telephone": "0646937602",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "9/31 Moo 7 Khao Noi",
+                "addressLocality": "Pranburi",
+                "postalCode": "77120",
+                "addressCountry": "TH"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "12.7244385",
+                "longitude": "99.96075"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+                ],
+                "opens": "09:00",
+                "closes": "22:00"
+            } 
+        }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style-new.css" />
+    <link rel="stylesheet" href="/static/components/header.css">
+    <link rel="stylesheet" href="/static/components/hero.css">
+    <link rel="stylesheet" href="/static/components/rows.css">
+    <link rel="stylesheet" href="/static/components/footer.css">
+    <link rel="stylesheet" href="/static/components/glide.core.min.css"> <!-- For hero slider -->
+    <link rel="stylesheet" href="/static/components/glide.core.gallery.min.css"> <!-- For menu slider-->
+
+    <!-- JS -->
+    <script src="/static/components/glide.min.js"></script> <!-- For ALL sliders -->
+
+  </head>
+
+  <body>
+
+    {% include "/components/header.html" %}
+
+    <main>
+    {% include "/components/hero.html" %}
+
+    {% include "/components/row-gallery.html" %}
+
+    {% include "/components/row-about-floss.html" %}
+
+    {% include "/components/row-treatments.html" %}
+
+    {% include "/components/row-reviews.html" %}
+
+    {% include "/components/row-notes.html" %}
+
+    {% include "/components/spacer.html" %}
+
+    <!-- <section class="gutter" style="border-top: 1px solid;"> -->
+    <!-- </section> -->
+
+    </main>
+    {% include "/components/footer.html" %}
+
+    <script>
+      window.addEventListener('load', () => {
+        document.body.classList.remove('is-preload');
+      });
+
+      const toggleBtn = document.getElementById('toggle-btn');
+      const menu = document.getElementById('menu-items');
+
+      toggleBtn.addEventListener('click', () => {
+        menu.classList.toggle('mobile-override');
+      });
+
+
+    </script>
+  </body>
+
+</html>

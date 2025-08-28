@@ -1,0 +1,83 @@
+<style>
+    .contact-form {
+        /* max-width: 600px; */
+        margin: auto;
+        /* background: #fff; */
+        /* padding: 20px; */
+        /* border-radius: 10px; */
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #00473c;
+  border-radius: 15px;
+  font-size: 14px;
+  background: transparent;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+    }
+    .contact-form textarea{
+        border-radius: 15px;
+    }
+
+    .row {
+        display: flex;
+        gap: 15px;
+    }
+
+    .row .col {
+        flex: 1;
+    }
+
+    .contact-form button {
+        background: #00473c;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .contact-form button:hover {
+        background: #00473cb4;
+    }
+</style>
+
+<form class="contact-form" action="#" method="post">
+    <!-- Name -->
+    <!-- <label for="name">Name</label> -->
+    <input placeholder="Name" type="text" id="name" name="name" required>
+
+    <!-- Number & Email in same row -->
+    <div class="row">
+        <div class="col">
+            <!-- <label for="number">Number</label> -->
+            <input placeholder="Number" type="tel" id="number" name="number" required>
+        </div>
+        <div class="col">
+            <!-- <label for="email">Email</label> -->
+            <input placeholder="Email" type="email" id="email" name="email" required>
+        </div>
+    </div>
+
+    <!-- Message -->
+    <!-- <label for="message">Message</label> -->
+    <textarea placeholder="Type your message here..." id="message" name="message" rows="5" required></textarea>
+
+    <!-- Captcha placeholder -->
+    <!-- <label for="captcha">Captcha</label> -->
+    <input placeholder="Captcha" type="text" id="captcha" name="captcha" placeholder="Enter Captcha">
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+</form>

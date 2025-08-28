@@ -40,12 +40,12 @@ def minify_css(input_path, output_path):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('page-index.html')
 
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('error-redirect.html'), 404
+    return render_template('page-error-redirect.html'), 404
 
 
 if __name__ == "__main__":

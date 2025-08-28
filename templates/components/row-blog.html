@@ -1,0 +1,62 @@
+<style>
+.blog-item{cursor: pointer;
+  transition: all 0.2s ease-in-out;}
+.blog-item:hover{transform: scale(1.01); opacity: 0.9}
+
+.blog-image{
+    flex: 1;
+    background-size: cover!important;
+    background-position: center!important;
+    transition: all 0.5s ease;
+    height: 200px;
+    border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .blog-image{flex: unset;}
+}
+</style>
+
+<article class="gutter" style="background-color: #f4f3e7; padding-top: 50px; padding-bottom:75px;">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: end; margin-bottom: 25px;">
+            <p style="font-weight: lighter; font-size: 20px;">THE LATEST</p>
+            <p class="desktop-only" style="font-weight: lighter;  font-size: 14px;"><a href="/blog">BLOG →</a></p>
+        </div>
+        <div class="flex-row" style="gap: 10px;">
+            <div class="flex-row blog-item" style="flex:1; background-color: #e8dcc6; border-radius: 15px;
+            padding: 15px; gap: 25px; justify-content: space-between;">
+                <div style="flex: 1;">
+                    <h3 style="margin-bottom: 10px; font-size: 16px; font-weight: lighter; text-transform: uppercase;">The Big Grill 2025</h3>
+                    <p style="word-spacing: .04em; margin-bottom: 25px; font-size: 14px; line-height: 15px;">The brightest and best Irish and international chefs, restaurants and barbecue experts come...</p>
+                    <p style="font-weight: lighter;"><a href="">Read more →</a></p>
+                </div>
+                <div class="blog-image" style="background: url(/static/images/big.png);">
+                </div>
+            </div>
+
+            <div class="flex-row desktop-only blog-item" style="flex:1; background-color: #e8dcc6; border-radius: 15px;
+            padding: 15px; gap: 25px;  justify-content: space-between;">
+                <div style="flex: 1;">
+                    <h3 style="margin-bottom: 10px; font-size: 16px; font-weight: lighter; text-transform: uppercase;">Dublin city's best bargain</h3>
+                    <p style="word-spacing: .04em; margin-bottom: 25px; font-size: 14px; line-height: 15px;">Chiya review: €9.90 Berlin-style kebab could be Dublin city's best bargain i...</p>
+                    <p style="font-weight: lighter;"><a href="">Read more →</a></p>
+                </div>
+                <div class="blog-image" style="background: url(/static/images/blog1.png);">
+                </div>
+            </div>
+
+            <div class="flex-row desktop-only blog-item" style="flex:1; background-color: #e8dcc6; border-radius: 15px;
+            padding: 15px; gap: 25px; justify-content: space-between;">
+                <div style="flex: 1;">
+                    <h3 style="margin-bottom: 10px; font-size: 16px; font-weight: lighter; text-transform: uppercase;">What is Şambali?</h3>
+                    <p style="word-spacing: .04em; margin-bottom: 25px; font-size: 14px; line-height: 15px;">Sweet, dense, and soaked in tradition. Our homemade Şambali is chewy, rich, and totally irres...</p>
+                    <p style="font-weight: lighter;"><a href="">Read more →</a></p>
+                </div>
+                <div style="flex: 1;">
+                    <div class="blog-image" style="background: url(/static/images/blog2.png);">
+                </div>
+            </div>
+
+            <p class="mobile-only" style="font-weight: lighter;"><a href="/blog">GO TO BLOG →</a></p>
+
+       </article>
+      
