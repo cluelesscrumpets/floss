@@ -42,6 +42,9 @@ def minify_css(input_path, output_path):
 def index():
     return render_template('page-index.html')
 
+@app.route('/treatments/teeth-whitening')
+def whitening():
+    return render_template('page-teeth-whitening.html')
 
 @app.errorhandler(404)
 def page_not_found(e):
