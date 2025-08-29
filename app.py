@@ -42,6 +42,14 @@ def minify_css(input_path, output_path):
 def index():
     return render_template('page-index.html')
 
+@app.route('/services')
+def redirect1():
+    return render_template('page-index.html')
+
+@app.route('/blog/coloured-retainers')
+def redirect2():
+    return render_template('page-index.html')
+
 @app.route('/treatments/teeth-whitening')
 def whitening():
     return render_template('page-teeth-whitening.html')
