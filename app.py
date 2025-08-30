@@ -61,5 +61,9 @@ def page_not_found(e):
 
 if __name__ == "__main__":
     minify_css('static/style.css', 'static/style.min.css')
+    minify_css('static/components/header.css', 'static/components/header.min.css')
+    minify_css('static/components/hero.css', 'static/components/hero.min.css')
+    minify_css('static/components/rows.css', 'static/components/rows.min.css')
+    minify_css('static/components/footer.css', 'static/components/footer.min.css')
     app.run(debug=True)
 

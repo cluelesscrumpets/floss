@@ -33,7 +33,7 @@
             font-weight: lighter;
             margin-bottom: 30px;}
 
-.about-floss-contents__img{width: 100%; border-radius: 1.25rem; padding: 10px;}
+.about-floss-contents__img{width: 100%; border-radius: 1.25rem;}
 @media (max-width: 768px) {
     .about-floss-contents__img { border-radius: 1.25rem;}
 }
@@ -45,7 +45,10 @@
     background: #f2f8fc;
     padding: 50px 30px;
     border-radius: 15px;
+    transition: transform 0.2s ease;
 }
+
+.treatments-card:hover {transform: translateY(-6px);}
 
 .treatments-card h2{margin-bottom: 15px;}
 
@@ -53,6 +56,14 @@
     padding: 0px;
     line-height: 30px;
 }
+
+/* GALLERY */
+.menu-glide__slide{transition: transform 0.2s ease;}
+.menu-glide__slide:hover{transform: translateY(6px);}
+
+/* REVIEWS */
+.reviews-glide__slide{transition: transform 0.2s ease;}
+.reviews-glide__slide:hover{transform: translateY(6px);}
 
 /* TEETH WHITENING */
 .teeth-whitening-content{

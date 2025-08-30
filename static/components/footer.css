@@ -16,7 +16,7 @@ footer a {color: white!important;}
 .swap-text-align{
     text-align: right;
 }
-.left-border{border-left: 1px solid grey;}
+.left-border{border-left: 1px solid #ffffff5e;}
 
 @media (max-width: 768px) {
     .footer-contents{gap: 20px;}

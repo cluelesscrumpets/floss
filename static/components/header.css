@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    background: #3686c0;
+    background: #025997;
     box-shadow: 0px 4px 12px #00000008;
     height: 72px;
     align-items: center;
@@ -12,6 +12,15 @@
 .site-header a {
     text-decoration: none;
 }
+
+.book-btn{width: 100px;
+  background-color: transparent;
+  padding: 10px 8px 8px;
+  border-radius: 1000px;
+  border: 1px solid white;
+transition: 0.2s all;}
+
+.book-btn:hover{background-color: rgba(255, 255, 255, 0.243); color: black;}
 
 .nav__main-list__item {
     flex: 1;
